@@ -1,0 +1,26 @@
+{
+    "name": "sass-practice",
+    "version": "1.0.0",
+    "description": "practice sass",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo 'hello'",
+        "sass": "node-sass --watch ./sass -o ./dist/css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ganneo/sass-practice.git"
+    },
+    "keywords": [
+        "sass"
+    ],
+    "author": "ganneo",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ganneo/sass-practice/issues"
+    },
+    "homepage": "https://github.com/ganneo/sass-practice#readme",
+    "dependencies": {
+        "node-sass": "^4.14.1"
+    }
+}

@@ -1,0 +1,63 @@
+@import 'variables';
+@import 'functions';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: darken($color: $secondary-color, $amount: 50%);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: $dark-color;
+    padding: 1rem;
+    h1 {
+        color: $light-color;
+        text-align: center;
+    }
+}
+
+.section {
+    &1 {
+        padding: 1rem;
+        background-color: $primary-color;
+        color: $light-color;
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+    &2 {
+        padding: 1rem;
+        background-color: $secondary-color;
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.btn {
+    &-light {
+        background-color: $light-color;
+        padding: 0.5rem;
+        color: $dark-color;
+    }
+    &-dark {
+        padding: 0.5rem;
+        background-color: $dark-color;
+        color: $light-color;
+    }
+    &-light:hover,
+    &-dark:hover {
+        background-color: darken($color: $light-color, $amount: 10%);
+    }
+    &-dark:hover {
+        background-color: lighten($color: $dark-color, $amount: 10%);
+    }
+}
