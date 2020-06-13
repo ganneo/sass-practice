@@ -19,7 +19,7 @@ header {
     background-color: $dark-color;
     padding: 1rem;
     h1 {
-        color: $light-color;
+        color: set-text-color($dark-color);
         text-align: center;
     }
 }
@@ -28,7 +28,7 @@ header {
     &1 {
         padding: 1rem;
         background-color: $primary-color;
-        color: $light-color;
+        color: set-text-color($primary-color);
         p {
             margin-bottom: 1rem;
         }
@@ -36,6 +36,7 @@ header {
     &2 {
         padding: 1rem;
         background-color: $secondary-color;
+        color: set-text-color($secondary-color);
         p {
             margin-bottom: 1rem;
         }
@@ -46,15 +47,14 @@ header {
     &-light {
         background-color: $light-color;
         padding: 0.5rem;
-        color: $dark-color;
+        color: set-text-color($light-color);
     }
     &-dark {
         padding: 0.5rem;
         background-color: $dark-color;
-        color: $light-color;
+        color: set-text-color($dark-color);
     }
-    &-light:hover,
-    &-dark:hover {
+    &-light:hover {
         background-color: darken($color: $light-color, $amount: 10%);
     }
     &-dark:hover {

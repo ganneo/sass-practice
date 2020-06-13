@@ -14,33 +14,34 @@ header {
   background-color: #333;
   padding: 1rem; }
   header h1 {
-    color: #f4f4f4;
+    color: white;
     text-align: center; }
 
 .section1 {
   padding: 1rem;
   background-color: steelblue;
-  color: #f4f4f4; }
+  color: white; }
   .section1 p {
     margin-bottom: 1rem; }
 
 .section2 {
   padding: 1rem;
-  background-color: lightblue; }
+  background-color: lightblue;
+  color: black; }
   .section2 p {
     margin-bottom: 1rem; }
 
 .btn-light {
   background-color: #f4f4f4;
   padding: 0.5rem;
-  color: #333; }
+  color: black; }
 
 .btn-dark {
   padding: 0.5rem;
   background-color: #333;
-  color: #f4f4f4; }
+  color: white; }
 
-.btn-light:hover, .btn-dark:hover {
+.btn-light:hover {
   background-color: #dbdbdb; }
 
 .btn-dark:hover {
