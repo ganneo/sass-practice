@@ -12,6 +12,7 @@ body {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -45,14 +46,12 @@ header {
 
 .btn {
     &-light {
-        background-color: $light-color;
+        @include color-background($light-color);
         padding: 0.5rem;
-        color: set-text-color($light-color);
     }
     &-dark {
         padding: 0.5rem;
-        background-color: $dark-color;
-        color: set-text-color($dark-color);
+        @include color-background($dark-color);
     }
     &-light:hover {
         background-color: darken($color: $light-color, $amount: 10%);
@@ -60,5 +59,6 @@ header {
     }
     &-dark:hover {
         background-color: lighten($color: $dark-color, $amount: 10%);
+
     }
 }

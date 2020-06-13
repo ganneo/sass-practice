@@ -8,6 +8,7 @@ body {
   background-color: #235e71; }
 
 a {
+  display: inline-block;
   text-decoration: none; }
 
 header {
@@ -33,8 +34,8 @@ header {
 
 .btn-light {
   background-color: #f4f4f4;
-  padding: 0.5rem;
-  color: black; }
+  color: black;
+  padding: 0.5rem; }
 
 .btn-dark {
   padding: 0.5rem;
@@ -43,7 +44,7 @@ header {
 
 .btn-light:hover {
   background-color: #dbdbdb;
-  transform: rotateX(360deg); }
+  transform: rotate(45deg); }
 
 .btn-dark:hover {
   background-color: #4d4d4d; }

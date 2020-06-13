@@ -7,6 +7,11 @@
     }
 }
 
-@mixin transform {
-    transform: rotateX(360deg);
+@mixin transform() {
+    transform: rotate(45deg);
+}
+
+@mixin color-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
 }
