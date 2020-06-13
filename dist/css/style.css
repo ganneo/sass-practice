@@ -42,7 +42,8 @@ header {
   color: white; }
 
 .btn-light:hover {
-  background-color: #dbdbdb; }
+  background-color: #dbdbdb;
+  transform: rotateX(360deg); }
 
 .btn-dark:hover {
   background-color: #4d4d4d; }

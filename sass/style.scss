@@ -56,6 +56,7 @@ header {
     }
     &-light:hover {
         background-color: darken($color: $light-color, $amount: 10%);
+        @include transform;
     }
     &-dark:hover {
         background-color: lighten($color: $dark-color, $amount: 10%);
